@@ -8,7 +8,7 @@
 (setq create-lock-files nil)
 (global-display-line-numbers-mode)
 
-(set-face-attribute 'line-number nil :foreground "gray" :background nil :height 0.8)
+;; (set-face-attribute 'line-number nil :foreground "gray" :background nil :height 0.8)
 
 (global-display-line-numbers-mode 1)
 
@@ -18,13 +18,20 @@
   :ensure t
   :if (display-graphic-p))
 
-(use-package tao-theme
+;; (use-package tao-theme
+;;   :ensure t
+;;   :init
+;;   (setq tao-theme-use-sepia nil)
+;;   (setq tao-theme-use-boxes nil)
+;;   :config
+;;   (load-theme 'tao-yang t)
+;;   (set-face-attribute 'default nil :family "Iosevka" :height 180))
+
+(use-package kaolin-themes
   :ensure t
-  :init
-  (setq tao-theme-use-sepia nil)
-  (setq tao-theme-use-boxes nil)
   :config
-  (load-theme 'tao-yang t)
-  (set-face-attribute 'default nil :family "Iosevka" :height 180))
+  (load-theme 'kaolin-light t)
+  (set-face-attribute 'default nil :family "Iosevka" :height 180)
+  (set-face-foreground 'font-lock-type-face "#2d2b50"))
 
 (provide '00-ui)
