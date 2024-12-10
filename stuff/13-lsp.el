@@ -1,7 +1,7 @@
 (use-package lsp-mode
   :ensure t
   :hook
-  ((clojure-mode tsx-ts-mode typescript-ts-mode go-ts-mode) . lsp)
+  ((clojure-mode tsx-ts-mode typescript-ts-mode go-ts-mode) . lsp-deferred)
   :config
   (setq lsp-completion-provider :capf)
   :custom
