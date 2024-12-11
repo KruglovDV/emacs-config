@@ -61,6 +61,11 @@
   "p a" '(projectile-toggle-between-implementation-and-test :which-key "impl <-> test")
   "p p" '(projectile-switch-project :which-key "switch project"))
 
+
+(leader-def
+  "t" '(:ignore t :which-key "treemacs")
+  "t t" '(treemacs :which-key "treemacs toggle"))
+
 (leader-def
   "SPC" '(execute-extended-command :which-key "M-x"))
 
