@@ -67,6 +67,11 @@
   "t t" '(treemacs :which-key "treemacs toggle"))
 
 (leader-def
+  "l" '(:ignore t :which-key "lsp")
+  "l a" '(lsp-execute-code-action :which-key "lsp actions")
+  "l r" '(lsp-find-references :whick-key "lsp find references"))
+
+(leader-def
   "SPC" '(execute-extended-command :which-key "M-x"))
 
 (define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-up)

@@ -1,11 +1,12 @@
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
 (menu-bar-mode -1)
-(setq inhibit-startup-screen t)
+;; (setq inhibit-startup-screen t)
 (setq scroll-step 1)
 (setq make-backup-files nil)
 (setq auto-save-default nil)
 (setq create-lock-files nil)
+(setq initial-buffer-choice "~/.emacs.d/start.org")
 (global-display-line-numbers-mode)
 
 ;; (set-face-attribute 'line-number nil :foreground "gray" :background nil :height 0.8)
